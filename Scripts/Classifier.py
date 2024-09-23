@@ -25,13 +25,6 @@ Usage:
     It requires setting up a tool interface with the appropriate parameters (param0 and param1) and configuring
     the environment settings, including the scratch folder location.
 
-Example:
-    To run this script as a Script Tool in ArcGIS, create a new tool in a custom toolbox and set the script file as the source. Define two parameters:
-    - Parameter 0: Unused (can be set as a dummy parameter).
-    - Parameter 1: A file parameter allowing the user to specify the path to the CSV file with downscale information.
-
-    Ensure that the Spatial Analyst extension is enabled before running the tool.
-
 Notes:
     - The script assumes that raster files follow a specific naming pattern ('cell_t_*') to identify relevant files for processing.
     - The CSV file should contain columns for 'initial_tile_class', 'new_tile_class', 'initial_cell_class', and 'new_cell_class' to define the reclassification rules.
