@@ -1,7 +1,7 @@
 """
 A simple script to delete unnecessary files and compact db for optimisation
-Author: Jo Serra
-Date: 04/09/2023
+Author: Josep Serra Gallego
+Date: 01/09/2024
 """
 import arcpy
 from arcpy.sa import *
