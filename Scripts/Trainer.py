@@ -21,7 +21,7 @@ Outputs:
 Author:
     Josep Serra Gallego
 Date:
-    2024-9-1
+    01/09/2024
 Version:
     1.0
 ArcGIS Version:
