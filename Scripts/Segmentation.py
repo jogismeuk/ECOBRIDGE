@@ -17,11 +17,7 @@ Inputs:
     - path and db path: File system path and database path where the rasters and CSV file are located.
 
 Outputs:
-    - Rasters for each unique transition saved in a temporary database, provided they contain data.
-
-Usage:
-    The script is intended to be used as a Script Tool within an ArcGIS toolbox. It requires setting up a tool interface with the appropriate parameters and configuring the environment settings,
-    including the scratch folder location.
+    - Rasters for each unique transition saved in a temporary database.
 
 Author:
     Jo Serra
