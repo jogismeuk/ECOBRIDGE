@@ -21,7 +21,7 @@ Outputs:
 Author:
     Josep Serra Gallego
 Date:
-    2024-1-1
+    2024-9-1
 Version:
     1.0
 ArcGIS Version:
@@ -67,7 +67,7 @@ def script_tool(param0, param1):
     arcpy.ia.TrainDeepLearningModel(
             in_folder=r"C:\ECOBRIDGE\SAMPLES",
             out_folder=r"C:\ECOBRIDGE\MODEL",
-            max_epochs=2,
+            max_epochs=20, # Change number of epochs if necessary
             model_type="UNET",
             batch_size=8,
             arguments="class_balancing False;mixup False;focal_loss False;ignore_classes 0",
