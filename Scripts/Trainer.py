@@ -2,15 +2,13 @@
 Trainer.py
 
 Description:
-    This Python script, designed for use within the ArcGIS environment, automates the process of training deep learning models
-    for spatial analysis. It leverages the arcpy module to export training data from specified raster inputs and then trains a
-    deep learning model using this data. The script utilizes two key arcpy functions: ExportTrainingDataForDeepLearning and TrainDeepLearningModel,
-    to prepare the training samples and to conduct the training process, respectively.
+    This script automates the process of training deep learning models for spatial analysis. 
+    It leverages the arcpy module to export training data from specified raster inputs and then trains a
+    deep learning model using this data.
 
 Requirements:
     - ArcGIS Pro with the Image Analyst extension licensed and enabled.
     - Python 3.x environment configured with ArcGIS Pro.
-    - Adequate disk space for storing exported training samples and the resulting trained model.
 
 Inputs:
     - in_raster: The input raster from which training samples are to be exported.
@@ -20,24 +18,8 @@ Outputs:
     - Training samples exported to the specified output folder.
     - A trained deep learning model saved in the specified model directory.
 
-Functions:
-    - script_tool(param0, param1): Orchestrates the training data export and model training processes.
-
-Usage:
-    This script is intended to be run within the ArcGIS Pro environment. 
-    It can be executed as a standalone Python script or integrated into an ArcGIS Pro project for automated model training workflows.
-
-Example:
-    Ensure that the ArcGIS Pro environment is correctly set up with the necessary input data. Modify the script to 
-    specify the paths to your input raster and class data, and adjust the output paths for the training samples and
-    model as needed.
-
-Notes:
-    - The script assumes that the input raster and class data are correctly formatted and located within the ArcGIS workspace.
-    - Output paths for training samples and the model are specified within the script. These may need to be adjusted based on your project's requirements.
-
 Author:
-    Jo Serra
+    Josep Serra Gallego
 Date:
     2024-1-1
 Version:
@@ -47,6 +29,7 @@ ArcGIS Version:
 Python Version:
     3.x
 """
+
 import arcpy
 import os
 import shutil
@@ -55,9 +38,9 @@ def script_tool(param0, param1):
     # Export training samples
 
     arcpy.ia.ExportTrainingDataForDeepLearning(
-        in_raster= arcpy.env.workspace + "CL3",
+        in_raster= arcpy.env.workspace + "\CL3",
         out_folder=r"C:\ECOBRIDGE\SAMPLES",
-        in_class_data=arcpy.env.workspace + "RasterT_CL41",
+        in_class_data=arcpy.env.workspace + "\RasterT_CL41",
         image_chip_format="TIFF",
         tile_size_x=256,
         tile_size_y=256,
