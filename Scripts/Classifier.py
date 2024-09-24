@@ -31,9 +31,9 @@ Notes:
     - The script logs messages to the ArcGIS tool interface, including the start and end of the reclassification process and details about each reclassification performed.
 
 Author:
-    Jo Serra
+    Josep Serra Gallego
 Date:
-    2024-01-01
+    01/09/2024
 Version:
     1.0
 ArcGIS Version:
