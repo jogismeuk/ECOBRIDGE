@@ -20,9 +20,9 @@ Outputs:
     - Rasters for each unique transition saved in a temporary database.
 
 Author:
-    Jo Serra
+    Josep Serra Gallego
 Date:
-    04/09/2023
+    01/09/2024
 Version:
     1.0
 ArcGIS Version:
