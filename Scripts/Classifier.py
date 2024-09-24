@@ -52,9 +52,9 @@ from arcpy.sa import * # Import spatial analyst tools for raster operations
 def ScriptTool(param0, param1):
     # Retrieve the path parameter as text
     path = r'' + arcpy.GetParameterAsText(1)
-    # Initialize a variable to track if any reclassification has occurred
+    # Initialise a variable to track if any reclassification has occurred
     changed = False
-    # Log start of the reclassification process
+    # Log start of the process
     arcpy.AddMessage('Starting reclassification module')
     # Create a Dataframe from the list of raster files with a specific naming pattern
     df_list_cell = pd.DataFrame(arcpy.ListRasters('cell_t_*'))
