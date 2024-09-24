@@ -3,7 +3,7 @@ Segmentation.py
 
 Description:
     This script is designed to segment raster data based on transitions defined in a CSV file.
-    It operates within the ArcGIS environment, utilizing arcpy and the Spatial Analyst extension for raster operations.
+    It operates within the ArcGIS environment. It uses arcpy and the Spatial Analyst extension for raster operations.
     The script reads a CSV file containing transition information, performs raster segmentation for each unique transition
     by subtracting scenario raster data from baseline raster data, and saves the resulting raster segments to a temporary database if they contain data.
 
@@ -19,20 +19,9 @@ Inputs:
 Outputs:
     - Rasters for each unique transition saved in a temporary database, provided they contain data.
 
-Functions:
-    - script_tool(para0): The main function that orchestrates the reading of the CSV file, performs raster segmentation for each transition, and saves the resulting rasters.
-
 Usage:
     The script is intended to be used as a Script Tool within an ArcGIS toolbox. It requires setting up a tool interface with the appropriate parameters and configuring the environment settings,
     including the scratch folder location.
-
-Example:
-    To run this script as a Script Tool in ArcGIS, create a new tool in a custom toolbox and set the script file as the source.
-    Define the necessary parameters for the CSV file path and the database path. Ensure that the Spatial Analyst extension is enabled before running the tool.
-
-Notes:
-    - The script assumes that the input rasters ('baseline' and 'scenario') are correctly formatted and located within the specified database path.
-    - The output rasters are named using a convention that includes the transition identifiers and are saved in the ArcGIS scratch folder.
 
 Author:
     Jo Serra
