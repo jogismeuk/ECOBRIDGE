@@ -1,3 +1,3 @@
-These scripts are run from the ECOBRIDGE ModelBuilder model in ArcGIS Pro. Running them outside of that context will not produce the desired results.
+The files in this folder are the main scripts that drive the ECOBRIDGE workflow. They are designed to run from the ECOBRIDGE ModelBuilder model in ArcGIS Pro. Running them outside of that context will not produce the desired results.
 Josep Serra Gallego
 09/2024
