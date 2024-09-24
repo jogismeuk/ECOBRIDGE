@@ -1,5 +1,5 @@
 """
-Segmenter_ECB.py
+Segmentation.py
 
 Description:
     This script is designed to segment raster data based on transitions defined in a CSV file.
