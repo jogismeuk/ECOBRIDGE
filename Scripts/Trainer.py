@@ -1,5 +1,5 @@
 """
-trainer_ECB.py
+Trainer.py
 
 Description:
     This Python script, designed for use within the ArcGIS environment, automates the process of training deep learning models
